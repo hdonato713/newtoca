@@ -159,6 +159,7 @@ body{
 
 /* imagem */
 #inicio .hero {
+    font-family: 'Times New Roman', Times, serif;
     position: relative;
     min-height: 86vh;
     display: flex;
@@ -238,5 +239,125 @@ body{
 
     #inicio .inicio-copy {
         padding-top: 30px;
+    }
+}
+
+/*==================================================
+                    ENXOVAL
+==================================================*/
+
+#enxoval {
+    --enxoval-bg: #f8f3ed; /* troque esta cor quando quiser */
+    background: var(--enxoval-bg);
+}
+
+#enxoval .section-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 18px 24px 10px;
+}
+
+/* Título em caixa alta com risco vermelho */
+#enxoval h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    position: relative;
+    text-align: left;
+}
+
+#enxoval h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 96px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--cor-principal);
+}
+
+/* Texto inicial: sem caixa, sem enfeite */
+#enxoval p:first-of-type {
+    margin-bottom: 26px;
+    color: var(--cor-secundaria);
+    line-height: 1.8;
+    text-align: left;
+    max-width: none;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Checklist sem cards */
+#enxoval ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 18px;
+    padding: 0;
+    margin: 0;
+}
+
+#enxoval li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--cor-texto);
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 2px 0;
+}
+
+/* Check ao lado de cada item */
+#enxoval li::before {
+    content: "✓";
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(200, 16, 46, 0.12);
+    color: var(--cor-principal);
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+/* Dica rápida em destaque */
+#enxoval .enxoval-note {
+    max-width: 760px;
+    margin: 34px auto 0;
+    padding: 22px;
+    text-align: center;
+    color: var(--cor-secundaria);
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.05);
+}
+
+#enxoval .enxoval-note strong {
+    color: var(--cor-principal);
+}
+
+/* Responsivo */
+@media (max-width: 720px) {
+    #enxoval .section-inner {
+        padding: 10px 18px 4px;
+    }
+
+    #enxoval ul {
+        grid-template-columns: 1fr;
+    }
+
+    #enxoval h2 {
+        letter-spacing: 0.10em;
     }
 }
