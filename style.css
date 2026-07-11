@@ -178,7 +178,7 @@ body{
             rgba(0, 0, 0, 0.18) 80%,
             rgba(247, 245, 242, 1) 100%
         ),
-        url("heroteste.jpg") center/cover no-repeat;
+        url("img/heroteste.jpg") center/cover no-repeat;
 
     color: #fff;
 }
@@ -360,4 +360,627 @@ body{
     #enxoval h2 {
         letter-spacing: 0.10em;
     }
+}
+
+/*==================================================
+                    A TOCA
+==================================================*/
+
+#atoca {
+    --atoca-bg: #fff8f3;
+    background: var(--atoca-bg);
+}
+
+#atoca .section-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 18px 24px 10px;
+}
+
+/* Título principal */
+#atoca h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    position: relative;
+    text-align: left;
+}
+
+#atoca h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 96px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--cor-principal);
+}
+
+/* Texto de introdução */
+#atoca .atoca-intro {
+    margin-bottom: 34px;
+    color: var(--cor-secundaria);
+    line-height: 1.8;
+    max-width: 78ch;
+}
+
+/* Bloco principal: texto + imagem lado a lado */
+.atoca-block {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: 28px;
+    align-items: center;
+
+    margin: 34px 0;
+    padding: 18px;
+
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Bloco invertido */
+.atoca-block.reverse {
+    grid-template-columns: minmax(320px, 0.85fr) minmax(0, 1.15fr);
+}
+
+/* Texto */
+.atoca-text {
+    min-width: 0;
+}
+
+.atoca-text h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.35rem;
+    color: var(--cor-texto);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.atoca-text p {
+    color: var(--cor-secundaria);
+    line-height: 1.8;
+    max-width: none;
+    margin-bottom: 0;
+}
+
+/* Imagem */
+.atoca-image {
+    min-width: 0;
+}
+
+.atoca-image img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Mobile */
+@media (max-width: 860px) {
+    .atoca-block,
+    .atoca-block.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .atoca-image img {
+        aspect-ratio: 16 / 10;
+    }
+}
+
+@media (max-width: 720px) {
+    #atoca .section-inner {
+        padding: 10px 18px 4px;
+    }
+
+    #atoca h2 {
+        letter-spacing: 0.10em;
+    }
+
+    .atoca-block {
+        padding: 14px;
+        border-radius: 22px;
+    }
+}
+
+/*==================================================
+                    REGIÃO
+==================================================*/
+
+#regiao{
+
+    --regiao-bg:#F3F6F8;      /* altere aqui quando quiser */
+
+    background:var(--regiao-bg);
+
+}
+
+#regiao .section-inner{
+
+    max-width:1120px;
+
+    margin:0 auto;
+
+    padding:18px 24px 10px;
+
+}
+
+/*------------------------
+        TÍTULO
+-------------------------*/
+
+#regiao h2{
+
+    text-transform:uppercase;
+
+    letter-spacing:.14em;
+
+    font-size:clamp(1.8rem,4vw,2.6rem);
+
+    font-weight:800;
+
+    margin-bottom:18px;
+
+    padding-bottom:14px;
+
+    position:relative;
+
+}
+
+#regiao h2::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:96px;
+    height:4px;
+
+    border-radius:999px;
+
+    background:var(--cor-principal);
+
+}
+
+/*------------------------
+        TEXTO
+-------------------------*/
+
+#regiao p{
+
+    color:var(--cor-secundaria);
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+    max-width:76ch;
+
+}
+
+/*------------------------
+        MAPA
+-------------------------*/
+
+#regiao iframe{
+
+    width:100%;
+
+    height:500px;
+
+    border:none;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    margin-top:26px;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+}
+
+/*------------------------
+        MOBILE
+-------------------------*/
+
+@media(max-width:720px){
+
+    #regiao .section-inner{
+
+        padding:10px 18px 4px;
+
+    }
+
+    #regiao iframe{
+
+        height:350px;
+
+    }
+
+}
+
+/*==================================================
+                    SÃO PAULO
+==================================================*/
+
+#saopaulo {
+    --saopaulo-bg: #f4efff; /* troque esta cor quando quiser */
+    background: var(--saopaulo-bg);
+}
+
+#saopaulo .section-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 18px 24px 10px;
+}
+
+/* Título no mesmo padrão das outras seções */
+#saopaulo h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    position: relative;
+    text-align: left;
+}
+
+#saopaulo h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 96px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--cor-principal);
+}
+
+/* Texto da seção */
+#saopaulo p {
+    color: var(--cor-secundaria);
+    line-height: 1.8;
+    margin-bottom: 18px;
+    max-width: 76ch;
+    text-align: left;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+/* Ilustração de São Paulo */
+#saopaulo .saopaulo-art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 34px auto 0;
+}
+
+#saopaulo .saopaulo-art img {
+    width: min(560px, 80%);
+    height: auto;
+    display: block;
+    object-fit: contain;
+    opacity: 0.92;
+}
+
+/* Se quiser a ilustração mais discreta */
+#saopaulo .saopaulo-art img {
+    filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.08));
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    #saopaulo .section-inner {
+        padding: 10px 18px 4px;
+    }
+
+    #saopaulo h2 {
+        letter-spacing: 0.10em;
+    }
+
+    #saopaulo p {
+        font-size: 0.98rem;
+    }
+
+    #saopaulo .saopaulo-art img {
+        width: min(420px, 88%);
+    }
+}
+
+/*==================================================
+                DICAS DOS RESIDENTES
+==================================================*/
+
+#dicas {
+    --dicas-bg: #fff8fa; /* troque esta cor quando quiser */
+    --card-font: "Times New Roman", Times, serif;
+
+    background: var(--dicas-bg);
+}
+
+#dicas .section-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 18px 24px 10px;
+}
+
+/* Título no padrão das outras seções */
+#dicas h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    position: relative;
+    text-align: left;
+}
+
+#dicas h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 96px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--cor-principal);
+}
+
+/* Texto inicial */
+#dicas p:first-of-type {
+    margin-bottom: 30px;
+    color: var(--cor-secundaria);
+    line-height: 1.8;
+    text-align: left;
+    max-width: 76ch;
+}
+
+/* Área dos cards: acumulado central, tipo mural */
+#dicas .cards-dicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px 20px;
+
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+/* Cartõezinhos */
+#dicas .card-dica {
+    width: 220px;
+    min-height: 190px;
+
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 18px;
+    padding: 18px 18px 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+
+    font-family: var(--card-font);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    position: relative;
+}
+
+/* “Entropia” / cartões jogados */
+#dicas .card-dica:nth-child(4n + 1) {
+    transform: rotate(-2deg);
+    margin-top: 0;
+}
+
+#dicas .card-dica:nth-child(4n + 2) {
+    transform: rotate(1.5deg);
+    margin-top: 22px;
+}
+
+#dicas .card-dica:nth-child(4n + 3) {
+    transform: rotate(-1deg);
+    margin-top: 44px;
+}
+
+#dicas .card-dica:nth-child(4n + 4) {
+    transform: rotate(2deg);
+    margin-top: 14px;
+}
+
+/* Hover: o card “voa” e endireita */
+#dicas .card-dica:hover {
+    transform: translateY(-8px) rotate(0deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.11);
+    z-index: 2;
+}
+
+/* Títulos dos cards */
+#dicas .card-dica h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: var(--cor-texto);
+    font-size: 1.12rem;
+    line-height: 1.2;
+}
+
+/* Texto dos cards */
+#dicas .card-dica p {
+    margin: 0;
+    color: var(--cor-secundaria);
+    line-height: 1.7;
+    text-align: left;
+    max-width: none;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+    #dicas .cards-dicas {
+        gap: 16px;
+    }
+
+    #dicas .card-dica {
+        width: min(100%, 320px);
+        min-height: auto;
+        margin-top: 0 !important;
+        transform: rotate(0deg) !important;
+    }
+}
+
+/*==================================================
+                LINKS E CONTATOS
+==================================================*/
+
+#contato{
+
+    --contato-bg:#F5F5F5;
+
+    background:var(--contato-bg);
+
+}
+
+#contato .section-inner{
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:18px 24px 10px;
+
+}
+
+/* título */
+
+#contato h2{
+
+    text-transform:uppercase;
+
+    letter-spacing:.14em;
+
+    font-size:clamp(1.8rem,4vw,2.6rem);
+
+    font-weight:800;
+
+    margin-bottom:18px;
+
+    padding-bottom:14px;
+
+    position:relative;
+
+}
+
+#contato h2::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:96px;
+    height:4px;
+
+    border-radius:999px;
+
+    background:var(--cor-principal);
+
+}
+
+/* introdução */
+
+.contato-intro{
+
+    color:var(--cor-secundaria);
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+/* grid */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:24px;
+
+}
+
+/* grupos */
+
+.contact-group{
+
+    background:rgba(255,255,255,.65);
+
+    border-radius:20px;
+
+    padding:22px;
+
+    box-shadow:0 10px 24px rgba(0,0,0,.05);
+
+}
+
+.contact-group h3{
+
+    margin-top:0;
+
+    margin-bottom:16px;
+
+    color:var(--cor-texto);
+
+}
+
+/* lista */
+
+.contact-group ul{
+
+    list-style:none;
+
+}
+
+.contact-group li{
+
+    margin-bottom:12px;
+
+}
+
+.contact-group li:last-child{
+
+    margin-bottom:0;
+
+}
+
+.contact-group a{
+
+    color:var(--cor-secundaria);
+
+    transition:.2s;
+
+}
+
+.contact-group a:hover{
+
+    color:var(--cor-principal);
+
+    padding-left:6px;
+
 }
