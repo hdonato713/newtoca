@@ -45,7 +45,7 @@ select{
 
     --cor-texto:#2D2D2D;
 
-    --cor-secundaria:#666666;
+    --cor-secundaria:#161616;
 
     --cor-borda:#E7E7E7;
 
@@ -247,7 +247,7 @@ body{
 ==================================================*/
 
 #enxoval {
-    --enxoval-bg: #f8f3ed; /* troque esta cor quando quiser */
+    --enxoval-bg: #f1ebac; /* troque esta cor quando quiser */
     background: var(--enxoval-bg);
 }
 
@@ -259,8 +259,9 @@ body{
 
 /* Título em caixa alta com risco vermelho */
 #enxoval h2 {
+    font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0;
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 800;
     margin-bottom: 18px;
@@ -337,10 +338,7 @@ body{
     padding: 22px;
     text-align: center;
     color: var(--cor-secundaria);
-    background: rgba(255, 255, 255, 0.72);
-    border: 1px solid rgba(17, 24, 39, 0.08);
-    border-radius: 18px;
-    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.05);
+
 }
 
 #enxoval .enxoval-note strong {
@@ -367,7 +365,7 @@ body{
 ==================================================*/
 
 #atoca {
-    --atoca-bg: #fff8f3;
+    --atoca-bg: var(--cor-fundo);
     background: var(--atoca-bg);
 }
 
@@ -379,8 +377,9 @@ body{
 
 /* Título principal */
 #atoca h2 {
+    font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0;
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 800;
     margin-bottom: 18px;
@@ -500,7 +499,7 @@ body{
 
 #regiao{
 
-    --regiao-bg:#F3F6F8;      /* altere aqui quando quiser */
+    --regiao-bg:var(--cor-principal);      /* altere aqui quando quiser */
 
     background:var(--regiao-bg);
 
@@ -522,9 +521,11 @@ body{
 
 #regiao h2{
 
+    font-family: 'Times New Roman', Times, serif;
+
     text-transform:uppercase;
 
-    letter-spacing:.14em;
+    letter-spacing:0;
 
     font-size:clamp(1.8rem,4vw,2.6rem);
 
@@ -619,7 +620,7 @@ body{
 ==================================================*/
 
 #saopaulo {
-    --saopaulo-bg: #f4efff; /* troque esta cor quando quiser */
+    --saopaulo-bg: var(--cor-fundo); /* troque esta cor quando quiser */
     background: var(--saopaulo-bg);
 }
 
@@ -631,8 +632,9 @@ body{
 
 /* Título no mesmo padrão das outras seções */
 #saopaulo h2 {
+    font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0;
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 800;
     margin-bottom: 18px;
@@ -708,7 +710,7 @@ body{
 ==================================================*/
 
 #dicas {
-    --dicas-bg: #fff8fa; /* troque esta cor quando quiser */
+    --dicas-bg: var(--cor-principal); /* troque esta cor quando quiser */
     --card-font: "Times New Roman", Times, serif;
 
     background: var(--dicas-bg);
@@ -722,8 +724,9 @@ body{
 
 /* Título no padrão das outras seções */
 #dicas h2 {
+    font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0;
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 800;
     margin-bottom: 18px;
@@ -847,7 +850,7 @@ body{
 
 #contato{
 
-    --contato-bg:#F5F5F5;
+    --contato-bg:#fff;
 
     background:var(--contato-bg);
 
@@ -866,10 +869,11 @@ body{
 /* título */
 
 #contato h2{
+    font-family: 'Times New Roman', Times, serif;
 
     text-transform:uppercase;
 
-    letter-spacing:.14em;
+    letter-spacing:0;
 
     font-size:clamp(1.8rem,4vw,2.6rem);
 
@@ -984,3 +988,154 @@ body{
     padding-left:6px;
 
 }
+/*==================================================
+                ENCERRAMENTO
+==================================================*/
+
+#final {
+    padding: 0;
+    background: var(--cor-fundo);
+}
+
+#final .final-hero {
+    position: relative;
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 72px 24px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.10) 0%,
+            rgba(0, 0, 0, 0.18) 72%,
+            rgb(0, 0, 0) 100%
+        ),
+        url("img/final.jpg") center/cover no-repeat;
+
+    color: #fff;
+}
+
+#final .final-overlay {
+    max-width: 820px;
+}
+
+#final .final-hero h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+    margin-bottom: 14px;
+    padding-bottom: 0;
+}
+
+#final .final-hero h2::after {
+    display: none;
+}
+
+#final .final-hero p {
+    color: rgba(255, 255, 255, 0.96);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* mobile */
+@media (max-width: 720px) {
+    #final .final-hero {
+        min-height: 52vh;
+        padding: 56px 18px;
+    }
+
+    #final .final-hero h2 {
+        font-size: clamp(1.8rem, 8vw, 2.6rem);
+        letter-spacing: 0.08em;
+    }
+}
+
+/*==================================================
+                TRANSIÇÕES
+==================================================*/
+
+section{
+
+    position:relative;
+
+    padding:90px 0;
+
+}
+
+/*==================================================
+                    FOOTER
+==================================================*/
+
+footer{
+
+    background:linear-gradient(
+        180deg,
+        #000000 0%,
+        #000000 35%,
+        #000000 100%
+    );
+
+    color:white;
+
+    padding:70px 24px 40px;
+
+}
+
+.footer-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+.footer-content h3{
+
+    font-size:2rem;
+
+    margin-bottom:16px;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    color:white;
+
+}
+
+.footer-content p{
+
+    color:rgba(255,255,255,.72);
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
+.footer-copy{
+
+    margin-top:28px;
+
+    font-size:.9rem;
+
+    opacity:.7;
+
+}
+
+section {
+    scroll-margin-top: 65px;
+}
+
