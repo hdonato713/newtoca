@@ -43,7 +43,7 @@ select{
 
     --cor-card:#FFFFFF;
 
-    --cor-texto:#2D2D2D;
+    --cor-texto:#1b1b1b;
 
     --cor-secundaria:#161616;
 
@@ -743,7 +743,7 @@ body{
     width: 96px;
     height: 4px;
     border-radius: 999px;
-    background: var(--cor-principal);
+    background: #030303;
 }
 
 /* Texto inicial */
@@ -850,7 +850,7 @@ body{
 
 #contato{
 
-    --contato-bg:#fff;
+    --contato-bg:#6b6b6b;
 
     background:var(--contato-bg);
 
