@@ -166,6 +166,29 @@ img.logo{
     transform:translateY(-1px);
 }   
 
+@media (max-width: 720px) {
+    img.logo {
+        left: 12px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .topbar nav {
+        width: calc(100% - 16px);
+        padding-left: 44px;
+    }
+
+    .topbar ul {
+        gap: 8px;
+        padding: 12px 2px;
+    }
+
+    .topbar a {
+        padding: 8px 12px;
+        font-size: 0.88rem;
+    }
+}
+
 /*==================================================
                     HERO
 ==================================================*/
