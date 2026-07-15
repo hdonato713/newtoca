@@ -86,10 +86,28 @@ body{
     top:0;
     z-index:1000;
 
-    background:var(--cor-principal);
+    background:linear-gradient(
+        180deg,
+        var(--cor-principal) 0%,
+        #e01335 35%,
+        #f32020 100%
+    );
 
     border-bottom:1px solid rgba(255,255,255,.15);
     box-shadow:0 8px 26px rgba(0,0,0,.08);
+
+}
+
+.logo{
+    position:absolute;
+    left:24px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:1001;
+
+    height: 100px;
+    width:auto;
+    display:block;
 }
 
 .topbar nav{
@@ -157,7 +175,7 @@ body{
     background: var(--cor-fundo);
 }
 
-/* imagem */
+/* imagem */        
 #inicio .hero {
     font-family: 'Times New Roman', Times, serif;
     position: relative;
@@ -248,7 +266,10 @@ body{
 
 #enxoval {
     --enxoval-bg: #f1ebac; /* troque esta cor quando quiser */
-    background: var(--enxoval-bg);
+    background: linear-gradient(
+        var(--enxoval-bg) 98%,
+        var(--cor-fundo) 100%
+    );
 }
 
 #enxoval .section-inner {
@@ -366,7 +387,10 @@ body{
 
 #atoca {
     --atoca-bg: var(--cor-fundo);
-    background: var(--atoca-bg);
+    background: linear-gradient(
+        var(--cor-fundo),
+        #d8d8d8
+    );
 }
 
 #atoca .section-inner {
@@ -501,7 +525,10 @@ body{
 
     --regiao-bg:var(--cor-principal);      /* altere aqui quando quiser */
 
-    background:var(--regiao-bg);
+    background:linear-gradient(
+        #f51919 10%,
+        var(--cor-principal) 50%
+    );
 
 }
 
@@ -621,7 +648,10 @@ body{
 
 #saopaulo {
     --saopaulo-bg: var(--cor-fundo); /* troque esta cor quando quiser */
-    background: var(--saopaulo-bg);
+    background: linear-gradient(
+        var(--cor-fundo),
+        #d8d8d8
+    );
 }
 
 #saopaulo .section-inner {
@@ -713,7 +743,10 @@ body{
     --dicas-bg: var(--cor-principal); /* troque esta cor quando quiser */
     --card-font: "Times New Roman", Times, serif;
 
-    background: var(--dicas-bg);
+    background:linear-gradient(
+        #f51919 10%,
+        var(--cor-principal) 50%
+    );
 }
 
 #dicas .section-inner {
@@ -852,7 +885,10 @@ body{
 
     --contato-bg:#6b6b6b;
 
-    background:var(--contato-bg);
+    background:linear-gradient(
+        #979797 10%,
+        #6b6b6b 80%
+    );
 
 }
 
